@@ -2,8 +2,8 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/Nwsdb.Web/ClientApp/.angular/cache/14.0.3
-/.vs/Nwsdb.Web
+/Nwsdb.Web/ClientApp/.angular/
+/.vs
 node_modules/
 
 # Build results
