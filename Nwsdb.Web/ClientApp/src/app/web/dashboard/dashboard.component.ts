@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Component, Inject, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-dashboard',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor() { }
+  constructor(private http: HttpClient, @Inject('BASE_URL') private baseUrl: string) { }
 
   ngOnInit(): void {
   }
 
+
+  getData() {
+    this.http.get<any[]>(this.baseUrl + 'weatherforecast').subscribe(result => {
+      //get data response from backend
+    }, error => console.error(error));
+  }
 }

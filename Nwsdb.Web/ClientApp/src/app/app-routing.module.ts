@@ -8,14 +8,14 @@ import { LandsAllViewComponent } from './web/lands/all/lands-all-view/lands-all-
 
 
 const routes: Routes =
-    [
-                { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
-                { path: 'dashboard', component: DashboardComponent },
-                { path: 'approval-main', component: ApprovalMainComponent },
-                { path: 'lands-all-main', component: LandsAllMainComponent },
-                { path: 'lands-all-add', component: LandsAllAddComponent },
-                { path: 'lands-all-view', component: LandsAllViewComponent },
-    ];
+  [
+    { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
+    { path: 'dashboard', component: DashboardComponent },
+    { path: 'approval-main', component: ApprovalMainComponent },
+    { path: 'lands-all-main', component: LandsAllMainComponent },
+    { path: 'lands-all-add', component: LandsAllAddComponent },
+    { path: 'lands-all-view', component: LandsAllViewComponent },
+  ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
