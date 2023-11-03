@@ -1,0 +1,8 @@
+{
+"SpaProxyServer": {
+"ServerUrl": "https://localhost:44484",
+"LaunchCommand": "npm start",
+"WorkingDirectory": "C:\\Users\\USER\\Documents\\NWSDB\\new\\Nwsdb.Web\\Nwsdb.Web\\ClientApp\\",
+"MaxTimeoutInSeconds": "120"
+}
+}
